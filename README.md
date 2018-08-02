@@ -1,6 +1,6 @@
 # ecommerce
 
-In this project simulate an Ecommerce, inspired by "Garbarino" where you will find:
+In this project simulate an Ecommerce, inspired by "Garbarino" use NodeJS. where you will find:
   * A home
   * A list of products with their paging
   * A breadcrumb
