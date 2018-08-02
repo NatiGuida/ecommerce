@@ -14,5 +14,3 @@ In this project simulate an Ecommerce, inspired by "Garbarino" where you will fi
 * npm install
 * npm start
 * localhost: 3000
-
-# Preview URL
