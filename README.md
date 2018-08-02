@@ -10,9 +10,9 @@ In this project simulate an Ecommerce, inspired by "Garbarino" where you will fi
   * And a filter of products
 
 # Development
--Clone repo
--npm install
--npm start
--localhost: 3000
+* Clone repo
+* npm install
+* npm start
+* localhost: 3000
 
 # Preview URL
