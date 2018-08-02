@@ -1,0 +1,27 @@
+doctype html
+include head.pug
+include header.pug
+section.listado-container.ficha-container
+  div.breadcrumb.breadcrumb-ficha
+    a(href='/productos') Productos
+    span > 
+    a(href='/filtro/' + product.filtro) #{product.filtro}
+    span > 
+    a #{product.nombre}
+  div.img-container.img-ficha(data-code=product.cod)
+    .save.icon-fav-container
+      i.far.fa-heart.icon-fav
+    .no-save.icon-fav-container.code
+      i.fas.fa-heart.icon-fav
+    div.a-containe.siblings
+      img#img-save(src='../' + product.img )
+      .name
+        span#name-save #{product.nombre}
+      div.price
+        p $ #{product.precio}
+      div.code
+        p #{product.cod}
+include footer.pug
+script(type='text/javascript' src='/javascripts/productos.js')
+
+

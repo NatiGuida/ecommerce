@@ -1,0 +1,41 @@
+doctype html
+include head.pug
+include header.pug
+section.container-filtros-listado
+  section.filtros-container
+    div.breadcrumb
+      a(href='/productos') Productos 
+      span > 
+      a(href='/filtro/' + category) #{category}
+    div.categoria
+      span Categoría
+    button#heladeras(value='heladera') Heladeras
+    button#cafetera(value='cafetera') Cafeteras
+    button#pavas(value='pavas') Pavas
+  section.listado-container
+    for producto in productos
+      div.img-container(data-code=producto.cod)
+        .save.icon-fav-container
+          i.far.fa-heart.icon-fav
+        .no-save.icon-fav-container.code
+          i.fas.fa-heart.icon-fav
+        a.a-containe.siblings(href='/producto' + producto.url + producto.cod)
+          img#img-save(src='../' + producto.img )
+          .name
+            span#name-save #{producto.nombre}
+          div.price
+            p $ #{producto.precio}
+          div.code
+            p #{producto.cod}
+  section.paginado-container
+    //- a(href='/productos/1')
+    //-   span 1
+    //- a(href='/productos/2')
+    //-   span 2
+    - var n = 1
+    while n <= total
+      a.pag(href='/productos/'+n)
+        span=n++
+include footer.pug
+script(type='text/javascript' src='/javascripts/productos.js')
+

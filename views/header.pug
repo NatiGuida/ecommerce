@@ -1,0 +1,20 @@
+header
+  section.search
+    .logo-container
+      a(href='/')
+        img(src='../images/logo.png' alt='')
+    .search-container
+      input.search-input.input-search#tags(type='type' placeholder='¿Qué estás buscando?')
+      button.search-button.button-search(type='submit')
+        i.fas.fa-search
+    .fav-container.fav-desktop
+      a(href='/favoritos') Tus favoritos | 
+        i.fas.fa-heart
+  nav
+    a(href='/')
+      b HOME
+    a(href='/productos')
+      |PRODUCTOS
+    a(href='/favoritos').fav-mobile Tus favoritos | 
+      i.fas.fa-heart
+      
